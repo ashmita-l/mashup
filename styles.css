@@ -14,9 +14,21 @@ header {
     display: flex;
     justify-content: center;
     padding: 20px;
+    width: 80%;
+    margin: auto;
 }
-#search input, #search button {
+#search input{
+    flex-grow: 1;
     margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+} 
+#search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 #filters {
     text-align: center;
