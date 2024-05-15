@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>mashup!</title>
+    </head>
+    <body>
+        <header>
+            <h1>mashup!</h1>
+            <p>Description of how to use the website and filters etc...</p>
+        </header>
+        <section id="search">
+            <input type="text" placeholder="Type any song name..." id="songSearch">
+            <button onclick="searchSong()">Search</button>
+        </section>
+        <section id="filters">
+            <label>Genre:
+                <select id="genreFilter">
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="classical">Classical</option>
+                    <option value="othergenre">Other</option>
+                </select>
+            </label>
+            <label>Language:
+                <select id="languageFilter">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="marathi">Marathi</option>
+                    <option value="gujarati">Gujarati</option>
+                    <option value="malayalam">Malayalam</option>
+                    <option value="kannada">Kannada</option>
+                    <option value="bengali">Bengali</option>
+                    <option value="french">French</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="otherlanguage">Other</option>
+                </select>
+            </label>
+            <label>Mood:
+                <select id="moodFilter">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="powerful">Powerful</option>
+                    <option value="energetic">Energetic</option>
+                    <option value="relaxed">Relaxed</option>
+                    <option value="othermood">Other</option>
+                </select>
+            </label>
+            <label>Tempo
+                <select id="tempoFilter">
+                    <option value="fourfour">4/4</option>
+                    <option value="threefour">3/4</option>
+                    <option value="twofour">2/4</option>
+                    <option value="seveneight">7/8</option>
+                    <option value="othertempo">Other</option>
+                </select>
+            </label>
+        </section>
+        <section id="results" style="display:none;">
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>
